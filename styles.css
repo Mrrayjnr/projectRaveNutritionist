@@ -745,60 +745,221 @@ font-weight: 500;
   justify-content: space-between;
 }
 
+
+
+/* stylying about by Ade  */
+/* stylying the logo  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.head{
+  /* border: 10px solid blue; */
+  padding: 5px;
+  display: flex;
+  gap: 10px;
+  margin: auto;
+
+}
+
+.headLogo{
+  display: grid;
+  /* border: 10px solid blue; */
+  grid-template-columns: repeat(2,1fr);
+  padding: 5px;
+  gap: 10px;
+
+}
+
+.headLogo > div{
+  padding: 70px;
+  background-color: #cbea7b;
+  border-radius: 5px;
+}
+
+.headLogos{
+  /* border: 10px solid blue; */
+  padding: 70px;
+  font-size: 9rem;
+  background-color: #cbea7b;
+  border-radius: 5px;
+}
+
+
+/* stylying after the logbox */
 .mainContent{
-    max-width: 800px;
-    margin: auto;
-    padding: 0 20px;
-    background-color: lightgreen;
+    /* max-width: 800px; */
+    /* margin: auto; */
+    padding: 20px;
+    background-color: #ecfbdc;
     text-align: center;
+    border-radius: 5px;
+    margin-top: 3rem;
 }
 
 .mainContent > h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
+    font-size: 23px;
+    /* margin-bottom: 20px; */
+    margin-top: 1rem;
 }
 
 .mainContent > p {
-    margin-bottom: 15px;
-    line-height: 1;
-    font-size: 15px;
+    /* margin-bottom: 15px; */
+    /* line-height: 1.5px; */
+    font-size: 10px;
+    /* margin-top: 30px; */
 }
 
 .storyContent {
-    max-width: 600px;
-    margin: auto;
+    /* max-width: 800px; */
+    /* margin: auto; */
     text-align: center;
+    margin-top: 30px;
+    padding: 50px;
+    background-color: #fff;
 }
 
 .storyContent > h2{
-    font-size: 28px;
+    font-size: 20px;
     margin-bottom: 10px;
 }
 
 .storyContent > p{
-    font-size: 14px;
+    font-size: 11px;
     margin-bottom: 20px;
 }
 
-.box {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px 20px;
-    padding: 20px;
-    background-color: #fff;
+.mainContainer{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #ecfbdc;
     border-radius: 12px;
+    border: 2px solid blue;
 }
 
-.boxItemText > h3{
-    font-size: 20px;
-    margin-bottom: 8px;
-    align-items: center;
-    border-bottom: 5px solid lightgreen;
+.subContainer{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
 }
 
-.boxItemText > p{
+.subContainer > div{
+  width: 50%;
+  height: 50%;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+}
+
+.textContainer > h3{
     font-size: 15px;
+    margin-bottom: 8px;
+    text-decoration: #cbea7b underline;
+    text-underline-offset: 10px;
+    margin-left: 15px;
+}
+
+
+.textContainer > p{
+    font-size: 11px;
     line-height: 1.5;
+    margin-left: 15px;
+}
+
+
+.rightBorder{
+  border-right: 6px solid #c7f156;
+}
+
+.leftBorder{
+  border-left: 6px solid #c7f156;
+}
+
+.achievement{
+  padding: 60px;
+  background-color: #fff;
+  text-align: center;
+  border: 10px solid blue;
+}
+
+.achievement > h2{
+  font-size: 25px;
+  margin-bottom: 10px;
+  }
+  
+  .achievement > p{
+      /* max-width: 600px; */
+      /* margin: auto; */
+      font-size: 11px;
+      margin-bottom: 40px;
+  }
+  
+  .cards{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 30px;
+      background-color: #fff;
+      border: 10px solid red;
+      margin-top: 10px;
+  }
+  
+  .card{
+      background-color: #ecfbdc;
+      padding: 30px;
+      border-radius: 5px;
+      /* box-shadow: 0 2px 8px; */
+      text-align: left;
+      
+  }
+  
+  .card > h3{
+      margin-bottom: 10px;
+      font-size: 18px;
+  }
+  
+  .card > p{
+      font-size: 14px;
+  }
+  
+  .proud{
+      background-color: #ecfbdc;
+      padding: 40px;
+      /* max-width: 1000px; */
+      /* margin: auto; */
+      /* align-items: center; */
+      /* justify-content: space-between; */
+      display: flex;
+      margin-top: 3rem;
+      border: 10px solid black;
+      
+  }
+
+
+
+  .proudText > h3{
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.proudText > p{
+    margin-bottom: 20px;
+    font-size: 11px;
+}
+
+.proudbutton > button{
+    background-color: #91c43d;
+    border: none;
+    padding: 11px 40px;
+    font-size: 11px;
+    border-radius: 3px;
+    /* display: flex; */
+    /* margin: auto; */
+    
 }
 
 /* Stying for Blog */
@@ -851,63 +1012,6 @@ font-weight: 500;
     color: #666;
   }
   
-.boxItemImg > img{
-    width: 100%;
-    border-radius: 5px;
-    object-fit: cover;
-    border-right: 30px solid lightgreen;
-}
-
-.achievement{
-    padding: 60px 20px;
-    background-color: #f4ffe5;
-    text-align: center;
-}
-
-.achievement > h2{
-font-size: 28px;
-margin-bottom: 10px;
-}
-
-.achievement > p{
-    max-width: 600px;
-    margin: auto;
-    font-size: 16px;
-    margin-bottom: 40px;
-}
-
-.cards{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 20px;
-}
-
-.card{
-    background-color: #f4ffe5;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px;
-    text-align: left;
-}
-
-.card > h3{
-    margin-bottom: 10px;
-    font-size: 18px;
-}
-
-.card > p{
-    font-size: 14px;
-}
-
-.Proud{
-    background-color: #ecfbdc;
-    padding: 40px 20px;
-    max-width: 1000px;
-    margin: auto;
-    align-items: center;
-    justify-content: space-between;
-    /* display: flex; */
-}
 
 .footAddress{
   display: flex;
@@ -1012,31 +1116,4 @@ margin-bottom: 10px;
     flex-direction: column;
   }
 
-  .Proud > h3{
-    margin-bottom: 10px;
-    font-size: 24px;
-}
-
-.Proud > p{
-    margin-bottom: 20px;
-    font-size: 16px;
-}
-
-.Proud > button{
-    background-color: #91c43d;
-    border: none;
-    padding: 12px 24px;
-    font-size: 15px;
-    color: white;
-    border-radius: 6px;
-    display: flex;
-    margin: auto;
-}
-
   }
-
-
-/* styling for testing */
-.achievement{
-  background-color: red;
-}
