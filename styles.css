@@ -770,21 +770,27 @@ font-weight: 500;
   grid-template-columns: repeat(2,1fr);
   padding: 5px;
   gap: 10px;
-
+  /* margin: auto; */
 }
 
 .headLogo > div{
   padding: 70px;
   background-color: #cbea7b;
   border-radius: 5px;
+  /* margin: auto; */
 }
 
 .headLogos{
   /* border: 10px solid blue; */
   padding: 70px;
-  font-size: 9rem;
+  font-size: 8rem;
   background-color: #cbea7b;
   border-radius: 5px;
+  display: flex;
+  /* border: 5px solid blueviolet; */
+  justify-content: center;
+  align-items: center;
+  /* margin: auto; */
 }
 
 
@@ -838,7 +844,7 @@ font-weight: 500;
     justify-content: center;
     background-color: #ecfbdc;
     border-radius: 12px;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
 }
 
 .subContainer{
@@ -884,7 +890,7 @@ font-weight: 500;
   padding: 60px;
   background-color: #fff;
   text-align: center;
-  border: 10px solid blue;
+  /* border: 10px solid blue; */
 }
 
 .achievement > h2{
@@ -902,9 +908,9 @@ font-weight: 500;
   .cards{
       display: grid;
       grid-template-columns: repeat(2,1fr);
-      gap: 30px;
+      gap: 10px;
       background-color: #fff;
-      border: 10px solid red;
+      /* border: 10px solid red; */
       margin-top: 10px;
   }
   
@@ -914,6 +920,8 @@ font-weight: 500;
       border-radius: 5px;
       /* box-shadow: 0 2px 8px; */
       text-align: left;
+      /* border: 10px solid yellow; */
+      margin-bottom: 10px;
       
   }
   
@@ -935,7 +943,7 @@ font-weight: 500;
       /* justify-content: space-between; */
       display: flex;
       margin-top: 3rem;
-      border: 10px solid black;
+      /* border: 10px solid black; */
       
   }
 
@@ -960,6 +968,115 @@ font-weight: 500;
     /* display: flex; */
     /* margin: auto; */
     
+}
+
+
+/* responsive for about */
+
+@media(min-width: 260px) and (max-width: 460px) {
+  .head{
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .headLogo{
+    grid-template-columns:(1fr);
+    padding: 20px;
+  }
+
+  .headLogo > div {
+    padding: 30px;
+  }
+
+  .headLogos{
+    padding: 30px;
+  }
+
+  .headLogos > div{
+    font-size: 4rem;
+  }
+
+
+  .mainContent {
+    padding: 15px;
+  }
+
+  .mainContent > h2 {
+    font-size: 18px;
+  }
+
+  .mainContent > p {
+    font-size: 12px;
+  }
+
+  .storyContent {
+    padding: 30px;
+  }
+
+  .storyContent > h2 {
+    font-size: 15px;
+  }
+
+  .storyContent > p {
+    font-size: 10px;
+  }
+
+  .mainContainer{
+    padding: 30px;
+    flex-direction: column;
+  }
+
+  .subContainer{
+    padding: 30px;
+    flex-direction: column;
+  }
+
+  .achievement{
+    padding: 20px;
+  }
+
+  .achievement > h2{
+    font-size: 12px;
+    }
+
+    .achievement > p{
+      font-size: 12px;
+    }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 20px;
+    flex-direction: column;
+  }
+
+  .card > h3 {
+    font-size: 16px;
+  }
+
+  .card > p {
+    font-size: 12px;
+  }
+
+  .proud {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .proudText > h3 {
+    font-size: 18px;
+  }
+
+  .proudText > p {
+    font-size: 10px;
+  }
+
+  .proudbutton > button {
+    padding: 8px 20px;
+    font-size: 10px;
+  }
 }
 
 /* Stying for Blog */
